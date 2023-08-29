@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* user mxid colors */
+  --mx-uc-1: hsl(208, 66%, 53%);
+  --mx-uc-2: hsl(302, 49%, 45%);
+  --mx-uc-3: hsl(163, 97%, 36%);
+  --mx-uc-4: hsl(343, 75%, 61%);
+  --mx-uc-5: hsl(24, 100%, 59%);
+  --mx-uc-6: hsl(181, 63%, 47%);
+  --mx-uc-7: hsl(242, 89%, 65%);
+  --mx-uc-8: hsl(94, 65%, 50%);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.MuiSvgIcon-root {
+  font-size: 18px !important;
+}
+
+.tippy-box[data-theme~='tomato'] {
+  background-color: tomato;
+  color: yellow;
+}
+
+/* svg {
+  width: 2.25rem !important;
+  height: 2.25rem !important;
+} */
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.accordion-content {
+  transition: max-height 0.3s ease-out, padding 0.3s ease;
+}
+
+input:checked ~ .dot {
+  transform: translateX(100%);
+  background-color: #8e54e9;
+}
+
+.react-toast-notifications__toast {
+  padding: 8px;
+  border-radius: 8px !important;
+  align-items: flex-start;
+}
+.react-toast-notifications__toast__icon-wrapper {
+  aspect-ratio: 1;
+  border-radius: 10px !important;
+  min-width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.react-toast-notifications__toast--info
+  .react-toast-notifications__toast__icon-wrapper {
+  display: none;
+}
+.react-toast-notifications__toast__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+body {
+  font-family: 'Inter', sans-serif !important;
+}
+
+pre {
+  font-family: 'Inter', sans-serif;
+}
+
+.image-loading {
+  background: linear-gradient(90deg, #cdcdcd 8%, #f5f5f5 20%, #cdcdcd 33%);
+  background-size: 200% 100%;
+  animation: 1.5s shine linear infinite;
+}
+.dark .image-loading {
+  background: linear-gradient(90deg, #2a2a2a 8%, #d5d5d5 20%, #2a2a2a 33%);
+  background-size: 200% 100%;
+  animation: 1.5s shine linear infinite;
+}
+@keyframes shine {
+  to {
+    background-position-x: -200%;
+  }
+}
+
+.ic-raw {
+  display: inline-block;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.react-code-input {
+  gap: 8px;
+  display: flex !important;
+  flex-wrap: wrap;
+}
+.react-code-input input {
+  background-color: '#F3F3F5';
+  color: '#565A7F';
+}
+.dark .react-code-input input {
+  background-color: #1F1F22;
+  color: #f5f5f5;
+}
